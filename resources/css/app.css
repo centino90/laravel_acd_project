@@ -1,0 +1,19 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/* custom */
+
+#app__calendar {
+    position: fixed;
+    right: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.5s cubic-bezier(0.1, 0.7, 1, 0.1);
+    overflow-x: hidden;
+    z-index: 4;
+}
+
+.sidebar-toggled #app__calendar {
+    right: 0 !important;
+}
